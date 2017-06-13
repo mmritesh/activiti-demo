@@ -16,5 +16,4 @@ public class ActivitiDemoApplication {
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(ActivitiDemoApplication.class, args);
 	}
-
 }

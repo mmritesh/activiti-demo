@@ -9,4 +9,7 @@ import java.util.Map;
  */
 public interface ActivitiService {
     ProcessInstance launchProcess(String processName, Map variables);
+    void claimAndCompleteAllTasks();
+    void claimAndCompleteTaskById(String taskId);
+    void claimAndCompleteByCandidateId(Long candidateId, Map<String, Object> params);
 }

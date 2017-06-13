@@ -3,16 +3,15 @@ package com.activiti.activitiDemo.activiti.delegate;
 import org.activiti.engine.delegate.DelegateExecution;
 import org.activiti.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by Ritesh on 06-06-2017.
+ * Created by ritesh on 12/6/17.
  */
 
 @Service
-public class EmailDelegate implements JavaDelegate{
+public class StoreResume implements JavaDelegate {
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        System.out.println("Email sent.");
+        System.out.println("Resume uploaded.");
     }
 }
